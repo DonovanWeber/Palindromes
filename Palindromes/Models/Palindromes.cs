@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 
 namespace PalindromesChecker.Models
 {
@@ -15,6 +16,9 @@ namespace PalindromesChecker.Models
     }
     public bool CheckPalindromeWord()
     {
+      string[] wordArray = Word.Split("");
+      // string [] reversedArray = .Reverse(wordArray);
+      
       return true;
     }
   }
