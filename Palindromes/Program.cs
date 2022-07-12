@@ -12,8 +12,9 @@ namespace PalindromesChecker
       Console.WriteLine("Enter a word: ");
       string userInputWord = Console.ReadLine();
       char [] charArray = userInputWord.ToCharArray();
+      Array.Reverse(charArray);
       PrintIndexAndValues(charArray);
-
+      
       Palindromes userInput = new Palindromes(userInputWord);
       Console.WriteLine(userInput.CheckPalindromeWord());
 
