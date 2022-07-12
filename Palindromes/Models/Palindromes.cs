@@ -14,12 +14,16 @@ namespace PalindromesChecker.Models
       Word = word;
      
     }
-    public bool CheckPalindromeWord()
+    public bool CheckPalindromeWord(string finalWord)
     {
-      string[] wordArray = Word.Split("");
-      // string [] reversedArray = .Reverse(wordArray);
-      
-      return true;
+     if (Word == finalWord)
+      {
+        return true;
+      }
+      else 
+      {
+        return false;
+      }
     }
   }
 }
