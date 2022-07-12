@@ -17,15 +17,18 @@ namespace PalindromesChecker
       string finalWord = new String(charArray);
       Console.WriteLine("Your reversed word is " + finalWord);
       Palindromes userInput = new Palindromes(userInputWord);
-      Console.WriteLine(userInput.CheckPalindromeWord(finalWord));
-      // if (userInput.CheckPalindromesWord(finalWord) == true)
-      // {
-      //   Console.WriteLine("Your word is a Palindrome");
-      // }
-      // else 
-      // {
-      //   Console.WriteLine("Your word is not a Palindrome");
-      // }
+      TrueOrFalse(userInput.CheckPalindromeWord(finalWord));
+    }
+    public static void TrueOrFalse(bool palindrome)
+    {  
+      if (palindrome == true)
+      {
+        Console.WriteLine("Your word is a Palindrome");
+      }
+      else 
+      {
+        Console.WriteLine("Your word is not a Palindrome");
+      }
     }
     public static void PrintIndexAndValues( Array myArray )  {
       for ( int i = myArray.GetLowerBound(0); i <= myArray.GetUpperBound(0); i++ )
